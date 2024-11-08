@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonas - CV</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="A HTML only CV page developed for the roadmap.sh challenge.">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+
+    <meta property="og:title" content="HTML CV - roadmap.sh Front-End challenge">
+    <meta property="og:description" content="A HTML only CV page developed for the roadmap.sh challenge.">
+    <meta property="og:title" content="HTML CV - roadmap.sh Front-End challenge">
+    <meta property="og:url" content="#">
+    <meta property="og:image" content="./assets/html_cv_social_media_banner.png">
+    <meta property="og:type" content="website">
+    <title>HTML CV - roadmap.sh Front-End challenge</title>
 </head>
 <style>
     :root {
         --p-color: #22c55e;
         --s-color: #3b82f6;
+        --t-color: #c9c9c9;
     }
 
     * {
@@ -19,7 +30,18 @@
     }
 
     body {
-        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: 1rem;
+        padding: 2rem;
+         border: 1px solid var(--t-color);
+        box-shadow: .5rem .5rem 1rem var(--t-color);
     }
 
     hr {
@@ -99,5 +121,8 @@
             <p>Add your LinkedIn, GitHub profile links</p>
         </div>
     </main>
+    <footer>
+        <p>Developed by <a href="https://github.com/Jonas-petty">@Jonas Felix</a>; Challenge by <a href="https://roadmap.sh/projects/single-page-cv">roadmap.sh</a></p>
+    </footer>
 </body>
 </html>
